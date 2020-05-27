@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="密码效果"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MainActivity">-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_main_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="#fff"-->
+<!--        android:orientation="vertical">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_pay_back"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/main_one"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:text="标题"-->
+<!--                android:textColor="#333"-->
+<!--                android:textSize="18dp"-->
+<!--                android:inputType="text"-->
+<!--                />-->
+<!--        </RelativeLayout>-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:background="#e5e5e5"/>-->
+<!--        &lt;!&ndash; 6位密码框布局，需要一个圆角边框的shape作为layout的背景 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            >-->
+<!--            &lt;!&ndash; inputType设置隐藏密码明文-->
+<!--            textSize设置大一点，否则“点”太小了，不美观 &ndash;&gt;-->
+<!--            <EditText-->
+<!--                android:id="@+id/tv_pass1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textSize="32sp"-->
+<!--                />-->
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#e5e5e5"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/main_two"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textSize="32sp"-->
+
+<!--                />-->
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#e5e5e5"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/main_three"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textSize="32sp"/>-->
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#e5e5e5"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/main_four"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textSize="32sp"/>-->
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#e5e5e5"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/main_five"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textSize="32sp"/>-->
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#e5e5e5"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_pass6"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textSize="32sp"/>-->
+<!--        </LinearLayout>-->
+<!--        <EditText-->
+<!--            android:id="@+id/main_six"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_margin="15dp"-->
+<!--            android:text="忘记密码？"-->
+<!--            android:textColor="#354EEF"/>-->
+<!--        &lt;!&ndash;        &lt;!&ndash; 输入键盘 &ndash;&gt;&ndash;&gt;-->
+<!--        &lt;!&ndash;        <GridView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/gv_keybord"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_below="@id/ll_main_password"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginTop="30dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:horizontalSpacing="0.5dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:background="#8E8E8E"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:numColumns="3"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:verticalSpacing="0.5dp"/>&ndash;&gt;-->
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->
